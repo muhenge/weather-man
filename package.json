@@ -1,0 +1,44 @@
+{
+  "name": "weather-man",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "bootstrap": "^4.6.0",
+    "exports-loader": "^2.0.0",
+    "imports-loader": "^2.0.0",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^5.0.0",
+    "precss": "^4.0.0",
+    "tether": "^1.4.7"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhenge/weather-man.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhenge/weather-man/issues"
+  },
+  "homepage": "https://github.com/muhenge/weather-man#readme"
+}
