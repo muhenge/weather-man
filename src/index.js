@@ -1,10 +1,16 @@
-const dataAPI = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=7892818979a2e87a17bcda46fe0dbc53'
+const city = document.getElementById('city-input');
+const submit = document.getElementById('submit-btn');
+const p = document.getElementById('val');
 
-const app = async () => {
-    let rs = await fetch(dataAPI);
-    let data = await rs.json();
-    data = console.log(data)
-    return data;
+
+const API = async(loc)=>{
+    const response = await fetch(loc);
+    const data = await response.json();
+    p.textContent = data.main.temp
+    console.log(data)
 }
 
-app();
+city.addEventListener('input',(e) => {
+    const dataAPI = `https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=7892818979a2e87a17bcda46fe0dbc53`;
+    API(dataAPI);
+});

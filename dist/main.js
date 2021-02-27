@@ -1,1 +1,1 @@
-(async()=>{let a=await fetch("https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=7892818979a2e87a17bcda46fe0dbc53"),e=await a.json();e=console.log(e)})();
+(()=>{const t=document.getElementById("city-input"),e=(document.getElementById("submit-btn"),document.getElementById("val"));t.addEventListener("input",(t=>{(async t=>{const a=await fetch(t),n=await a.json();e.textContent=n.main.temp,console.log(n)})(`https://api.openweathermap.org/data/2.5/weather?q=${t.target.value}&appid=7892818979a2e87a17bcda46fe0dbc53`)}))})();
