@@ -1,14 +1,11 @@
-// const city = document.getElementById('city-input');
-// const submit = document.getElementById('submit-btn');
-// const p = document.getElementById('val');
+import apiCall from './apiCall';
 
-// const { default: API } = require("./apiCall");
-import apiCall from './apiCall'
-
-// apiCall();
-
-document.getElementById('submit-btn').addEventListener('click', (e)=>{
-    if(e.target) {
-        apiCall();
+document.getElementById('city-input').addEventListener('input',(e) => {
+    try {
+        apiCall(e.target.value);
+    } catch (error) {
+        console.log(error);
     }
-}, false);
+});
+
+
