@@ -7,7 +7,6 @@ const apiCall = async(input) => {
         const response = await fetch(dataAPI);
         const data = await response.json();
         console.log(data.main.temp);
-       
         document.getElementById('val').textContent = Math.round(data.main.temp_max-273);
     })
 }
