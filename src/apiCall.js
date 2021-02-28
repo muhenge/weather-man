@@ -9,7 +9,11 @@ const apiCall = async(input) => {
         const data = await response.json();
         console.log(data.weather[0].description)
         if(e.target) {
-            document.getElementById('temp').innerHTML = `<span class="display-1 text-muted">${Math.round(data.main.temp_max-273)}&#176C</span>`;
+            document.getElementById('info').innerHTML = `
+            <div class="display-1 text-muted">${Math.round(data.main.temp_max-273)}&#176C</div><br>
+            <div class="display-6 text-muted">${data.name}</div>
+            `;
+            
             if (data.weather[0].description === 'scattered clouds') {
                 iconContainer.innerHTML = '<img src="./images/cloud.png" class="img-fluid img-thumbnail"/>'
             }
