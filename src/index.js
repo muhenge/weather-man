@@ -1,11 +1,9 @@
 import apiCall from './apiCall';
 
-document.getElementById('city-input').addEventListener('input',(e) => {
-    try {
-        apiCall(e.target.value);
-    } catch (error) {
-        console.error(error);
-    }
+document.getElementById('city-input').addEventListener('input', (e) => {
+  try {
+    apiCall(e.target.value);
+  } catch (error) {
+    console.error(error);
+  }
 });
-
-
