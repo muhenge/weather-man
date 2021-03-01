@@ -17,5 +17,8 @@ body {
 }
 
 img.icon {
-
+    width: 144px;
+    object-fit: cover;
+    height: auto;
+    background-repeat: no-repeat;
 } 
