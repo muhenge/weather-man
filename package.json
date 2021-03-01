@@ -2,6 +2,7 @@
   "name": "weather-man",
   "version": "1.0.0",
   "description": "",
+  "private":true,
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^10.2.4",
@@ -37,7 +38,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start:dev": "webpack serve"
   },
