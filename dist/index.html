@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Weather App</title>
   <body>
-    <div class="container d-flex d-sm-flex d-md-flex justify-content-center justify-content-md-center">
+    <div class="container ">
       <div class="row vh-100 pt-5">
         <div class="col-6 col-sm-12 pt-5">
           <div class="input-group">
@@ -19,8 +19,8 @@
             <button type="button" id="submit-btn" class="btn btn-primary">search</button>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-            <button class="btn btn-primary me-md-2" type="button">Button</button>
-            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary me-md-2" type="button" id="c">C</button>
+            <button class="btn btn-primary" type="button" id="f">F</button>
           </div>
           <div class="container pt-5 " id="not-found">
             <div class="error"></div>
@@ -29,7 +29,7 @@
                 <img class="img-fluid" width="200" height="200" >
               </div>
               <div class="col-sm">
-                 <span class="display-1 text-white" id="temp"> </span>  <span class="display-6 text-white" id="forecast"></span>
+                 <span class="display-1 d-block text-white" id="temp"> </span>  <span class="display-6 d-block text-white" id="forecast"></span>
               </div>
               <div class="col-sm">
                 <span class="display-6 text-white" id="city"> </span>  <span class=" text-white d-inline" id="country"> </span>
