@@ -7,16 +7,15 @@ const getWeatherData = async (city) => {
     const data = await response.json();
     const iconcode = data.weather[0].icon;
     const iconurl = `http://openweathermap.org/img/w/${iconcode}.png`;
-    const icon = document.createElement("img");
-
-    document.getElementById("info").innerHTML = `
-            <span class="display-1 text-white">${Math.round(data.main.temp_max - 273)}&#176C</span><br>
-            <span class="display-6 text-white">${data.name}</span><br>  <span class=" text-white d-inline">${data.sys.country}</span>
-            `;
-    document.getElementById("icon").appendChild(icon);
-    document.getElementById("forecast").innerHTML = `
-        <span class="display-4 text-white">${data.weather[0].description}</span> 
-        `;
+    const icon = document.querySelector('img');
+    icon.src = `${iconurl}`;
+    document.getElementById('city').innerText = `${data.name}`;
+    document.getElementById('country').innerText = `${data.sys.country}`;
+    document.getElementById('temp').innerHTML = `<strong> ${Math.round(data.main.temp_max - 273)} &#176C</strong>`;
+    document.getElementById('forecast').innerText = `${data.weather[0].description}`;
+    // icon.classList.add('icon');
+    // document.getElementById('icon').appendChild(icon)
+  
   } catch (error) {
     document.getElementById("info").textContent = "City not found";
   }
@@ -27,7 +26,10 @@ const apiCall = () => {
     e.preventDefault();
     getWeatherData(cityInput.value);
     cityInput.value = "";
+    e.stopPropagation();
   });
 };
+
+
 
 export default apiCall;

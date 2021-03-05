@@ -10,13 +10,30 @@
     <link rel="stylesheet" href="./style.css">
     <title>Weather App</title>
   <body>
-    <div class="container">
+    <div class="container d-flex d-sm-flex d-md-flex justify-content-center justify-content-md-center">
       <div class="row vh-100 pt-5">
         <div class="col-6 col-sm-12 pt-5">
           <div class="input-group">
             <input type="search" id="city-input" class="form-control rounded" placeholder="Enter a City name" aria-label="Search"
               aria-describedby="search-addon" />
-            <button type="button" id="submit-btn" class="btn btn-outline-primary">search</button>
+            <button type="button" id="submit-btn" class="btn btn-primary">search</button>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button class="btn btn-primary me-md-2" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+          </div>
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-sm icon">
+                <img  alt="" srcset="">
+              </div>
+              <div class="col-sm">
+                 <span class="display-1 text-white" id="temp"> </span>  <span class="display-6 text-white" id="forecast"></span>
+              </div>
+              <div class="col-sm">
+                <span class="display-6 text-white" id="city"> </span>  <span class=" text-white d-inline" id="country"> </span>
+              </div>
+            </div>
           </div>
           <div class="text"></div>
         </div>
