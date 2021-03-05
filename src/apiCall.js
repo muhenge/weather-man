@@ -13,11 +13,11 @@ const getWeatherData = async (city) => {
     document.getElementById('country').innerText = `${data.sys.country}`;
     document.getElementById('temp').innerHTML = `<strong> ${Math.round(data.main.temp_max - 273)} &#176C</strong>`;
     document.getElementById('forecast').innerText = `${data.weather[0].description}`;
-    // icon.classList.add('icon');
-    // document.getElementById('icon').appendChild(icon)
-  
+    body = document.querySelector('body');
+    body.style.backgroundColor = `${iconurl}`;
+
   } catch (error) {
-    document.getElementById("info").textContent = "City not found";
+    document.getElementById('not-found').innerHTML = '<span class="display-3 text-danger">City not found</span>'
   }
 };
 
