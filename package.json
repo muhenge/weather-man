@@ -1,0 +1,55 @@
+{
+  "name": "weather-man",
+  "version": "1.0.0",
+  "description": "",
+  "private":true,
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "bootstrap": "^4.6.0",
+    "exports-loader": "^2.0.0",
+    "imports-loader": "^2.0.0",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^5.0.0",
+    "precss": "^4.0.0",
+    "tether": "^1.4.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start:dev": "webpack serve",
+    "dev": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhenge/weather-man.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhenge/weather-man/issues"
+  },
+  "homepage": "https://github.com/muhenge/weather-man#readme"
+}
